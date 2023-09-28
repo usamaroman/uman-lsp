@@ -13,9 +13,22 @@ import (
 const name = "uman lsp"
 
 func main() {
-	logger := slog.New(slog.NewJSONHandler(os.Stdin, &slog.HandlerOptions{
+	logFile, err := os.Create(".umanlsp.log")
+	if err != nil {
+		slog.Error("failed to create log output file", slog.Any("error", err))
+		os.Exit(1)
+	}
+	defer logFile.Close()
+
+	logger := slog.New(slog.NewJSONHandler(logFile, &slog.HandlerOptions{
 		Level: slog.LevelDebug,
 	}))
+	defer func() {
+		if r := recover(); r != nil {
+			logger.Error("panic", slog.Any("recovered", r))
+		}
+	}()
+
 	logger.Debug(fmt.Sprintf("%s started", name))
 
 	m := mux.New(os.Stdin, os.Stdout, logger)

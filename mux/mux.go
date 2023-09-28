@@ -85,5 +85,8 @@ func (m *Mux) Notify(method string, params any) error {
 func (m *Mux) write(msg rpc.Message) error {
 	m.writeLock.Lock()
 	defer m.writeLock.Unlock()
+
+	m.Log.Info("sent response", slog.Any("response", msg))
+
 	return rpc.Write(m.writer, msg)
 }
