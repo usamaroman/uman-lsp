@@ -1,5 +1,8 @@
 package messages
 
+const InitializedNotification = "initialized"
+const InitializeMethod = "initialize"
+
 type InitializeParams struct {
 	// ClientInfo provides information about client
 	ClientInfo *ClientInfo `json:"clientInfo"`
