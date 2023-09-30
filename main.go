@@ -52,7 +52,7 @@ func main() {
 			Capabilities: messages.ServerCapabilities{
 				TextDocumentSync: messages.TextDocumentSyncKindFull,
 				CompletionProvider: &messages.CompletionOpts{
-					TriggerCharacters: []string{"с", "в", ":", "ч", "д", "л", "и", "б"},
+					TriggerCharacters: []string{"с", "в", ":", "ч", "д", "л", "и", "б", "ц"},
 				},
 			},
 			ServerInfo: &messages.ServerInfo{
@@ -175,6 +175,12 @@ func main() {
 				Kind:          messages.CompletionItemKindKeyword,
 				Detail:        "функция",
 				Documentation: "функция",
+			},
+			{
+				Label:         "цикл",
+				Kind:          messages.CompletionItemKindKeyword,
+				Detail:        "цикл",
+				Documentation: "цикл",
 			},
 		}
 
