@@ -52,7 +52,7 @@ func main() {
 			Capabilities: messages.ServerCapabilities{
 				TextDocumentSync: messages.TextDocumentSyncKindFull,
 				CompletionProvider: &messages.CompletionOpts{
-					TriggerCharacters: []string{"с", "в", ":", "ч", "д", "л", "и"},
+					TriggerCharacters: []string{"с", "в", ":", "ч", "д", "л", "и", "б"},
 				},
 			},
 			ServerInfo: &messages.ServerInfo{
@@ -121,6 +121,12 @@ func main() {
 				Kind:          messages.CompletionItemKindKeyword,
 				Detail:        "строковой тип данных",
 				Documentation: "строковой тип данных",
+			},
+			{
+				Label:         "булев",
+				Kind:          messages.CompletionItemKindKeyword,
+				Detail:        "логический тип данных",
+				Documentation: "логический тип данных",
 			},
 			{
 				Label:         "истина",
