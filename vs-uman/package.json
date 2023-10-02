@@ -17,8 +17,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "vs-uman.helloWorld",
-        "title": "Hello World"
+        "command": "vs-uman.runCode",
+        "title": "Run Code"
       }
     ],
     "languages": [{
