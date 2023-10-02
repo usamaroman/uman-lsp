@@ -3,7 +3,7 @@
   "publisher": "usamaroman",
   "displayName": "vs-uman",
   "description": "Provides uman support",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.82.0"
   },
