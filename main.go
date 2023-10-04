@@ -147,18 +147,6 @@ func main() {
 				Documentation: "ключевое слово для создания переменных",
 			},
 			{
-				Label:         "вывести",
-				Kind:          messages.CompletionItemKindFunction,
-				Detail:        "вывести значение переменной",
-				Documentation: "вывести значение переменной",
-			},
-			{
-				Label:         "длина",
-				Kind:          messages.CompletionItemKindFunction,
-				Detail:        "вывести длину",
-				Documentation: "вывести длину",
-			},
-			{
 				Label:         "если",
 				Kind:          messages.CompletionItemKindKeyword,
 				Detail:        "условный оператор",
@@ -181,6 +169,42 @@ func main() {
 				Kind:          messages.CompletionItemKindKeyword,
 				Detail:        "цикл",
 				Documentation: "цикл",
+			},
+			{
+				Label:         "массив",
+				Kind:          messages.CompletionItemKindKeyword,
+				Detail:        "массив",
+				Documentation: "массив",
+			},
+			{
+				Label:         "вывести",
+				Kind:          messages.CompletionItemKindFunction,
+				Detail:        "вывести значение переменной",
+				Documentation: "вывести значение переменной",
+			},
+			{
+				Label:         "длина",
+				Kind:          messages.CompletionItemKindFunction,
+				Detail:        "возвращает длину",
+				Documentation: "возвращает длину",
+			},
+			{
+				Label:         "первый",
+				Kind:          messages.CompletionItemKindFunction,
+				Detail:        "возвращает первый элемент массива",
+				Documentation: "возвращает первый элемент массива",
+			},
+			{
+				Label:         "последний",
+				Kind:          messages.CompletionItemKindFunction,
+				Detail:        "возвращает последний элемент массива",
+				Documentation: "возвращает последний элемент массива",
+			},
+			{
+				Label:         "добавить",
+				Kind:          messages.CompletionItemKindFunction,
+				Detail:        "добавляет элемент в массив",
+				Documentation: "добавляет элемент в массив",
 			},
 		}
 
