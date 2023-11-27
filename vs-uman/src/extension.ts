@@ -14,7 +14,7 @@ let myTerminal: vscode.Terminal | undefined
 export function activate(context: vscode.ExtensionContext) {
   // vscode.window.showInformationMessage(`Starting LSP`);
   let serverOptions: ServerOptions = {
-    command: "/home/chechyotka/projects/usamaroman/uman-lsp/umanlsp",
+    command: "umanlsp",
     transport: TransportKind.stdio,
   };
 
