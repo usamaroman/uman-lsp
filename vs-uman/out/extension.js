@@ -8,7 +8,7 @@ let myTerminal;
 function activate(context) {
     // vscode.window.showInformationMessage(`Starting LSP`);
     let serverOptions = {
-        command: "/home/chechyotka/projects/usamaroman/uman-lsp/umanlsp",
+        command: "umanlsp",
         transport: node_1.TransportKind.stdio,
     };
     let clientOptions = {
