@@ -4,7 +4,7 @@ Uman LSP -- LSP сервер для языка программирования 
 
 ## установка 
 ```
-    go install github.com/usamaroman/uman-lsp@latest
+    go install github.com/usamaroman/uman-lsp/cmd/umanlsp@latest
 ```
 
 ## собрать проект локально с помощью Make
