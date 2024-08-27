@@ -2,3 +2,4 @@
 bin
 vs-uman/node_modules
 vs-uman/vs-uman-0.0.1.vsix
+*.log

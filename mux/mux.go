@@ -7,7 +7,7 @@ import (
 	"os"
 	"sync"
 
-	"lsp/rpc"
+	"github.com/usamaroman/uman-lsp/rpc"
 )
 
 type NotificationHandler func(params json.RawMessage) (err error)

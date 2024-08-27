@@ -6,8 +6,8 @@ import (
 	"log/slog"
 	"os"
 
-	"lsp/messages"
-	"lsp/mux"
+	"github.com/usamaroman/uman-lsp/messages"
+	"github.com/usamaroman/uman-lsp/mux"
 )
 
 const name = "uman lsp"
